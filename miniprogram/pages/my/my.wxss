@@ -1,0 +1,35 @@
+.van_row {
+  height: 150rpx;
+  padding: 20rpx 0;
+  margin-bottom: 20rpx;
+  background-color: #fff;
+}
+
+.username {
+  padding-top: 20rpx;
+  padding-bottom: 10rpx;
+  font-size: 40rpx;
+}
+
+.address {
+  color: #646566;
+}
+
+.sex {
+  margin-left: 20rpx;
+  height: 30rpx;
+  width: 30rpx;
+}
+
+.cleanBtn {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border-radius: 0;
+  background-color: transparent;
+  line-height: inherit;
+  width: max-content;
+}
+.cleanBtn:after {
+  border: none;
+}

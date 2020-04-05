@@ -1,0 +1,28 @@
+<wxs src="../../utils/tools.wxs" module="tools" />
+<view class="container">
+  <view class="search">
+    <van-search value="{{searchVal}}" disabled bindtap="onFocus" shape="round" input-align="center" bind:focus="onFocus" placeholder="请输入搜索关键词" />
+  </view>
+  <van-dropdown-menu active-color="#ee0a24">
+    <van-dropdown-item data-type="op1" bind:change="onChange" value="{{ value1 }}" options="{{ option1 }}" />
+    <van-dropdown-item data-type="op2" bind:change="onChange" value="{{ value2 }}" options="{{ option2 }}" />
+  </van-dropdown-menu>
+  <block wx:if="{{goodslist.length != 0}}">
+    <view class="goodslist" wx:for="{{goodslist}}" wx:key="key">
+      <van-card custom-class="goodscard" data-id="{{item._id}}" bindtap="goInfo" centered="{{true}}" price="{{ item.price }}" desc="{{ item.desc }}" thumb="{{ item.thumb }}" thumb-mode="scaleToFill">
+        <view slot="title">
+          {{ item.title }}
+          <view class="title">
+            <van-icon name="clock-o" /> {{ tools.formatTime(item.updatetime) }}</view>
+        </view>
+        <view class="location" slot="num">
+          <view>
+            <van-icon name="location-o" /> {{ item.address }}</view>
+        </view>
+      </van-card>
+    </view>
+  </block>
+  <block wx:else>
+    <text class="tips">暂无数据</text>
+  </block>
+</view>

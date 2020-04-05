@@ -1,0 +1,43 @@
+.van_row {
+  height: 150rpx;
+  padding: 20rpx 0;
+  margin-bottom: 20rpx;
+  background-color: #fff;
+}
+
+.username {
+  padding-top: 20rpx;
+  padding-bottom: 10rpx;
+  font-size: 40rpx;
+}
+
+.address {
+  color: #646566;
+}
+
+.sex {
+  margin-left: 20rpx;
+  height: 30rpx;
+  width: 30rpx;
+}
+
+.goods_info{
+  min-height: 500rpx;
+}
+.header_title {
+  font-size: 18px !important;
+}
+
+.des {
+  padding: 10px 16px;
+  min-height: 30rpx;
+}
+.imglist{
+  text-align: center;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.zhanwei{
+  height: 140rpx;
+}

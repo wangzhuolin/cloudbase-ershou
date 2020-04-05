@@ -1,0 +1,24 @@
+<wxs src="../../../utils/tools.wxs" module="tools" />
+<view class="container">
+  <block wx:if="{{goodslist.length != 0}}">
+    <view class="goodslist" wx:for="{{goodslist}}" wx:key="key">
+      <van-swipe-cell id="swipe-cell" right-width="{{ 65 }}" data-id="{{item._id}}" async-close bind:close="onClose">
+        <van-card custom-class="goodscard" data-id="{{item.goodsid}}" bindtap="goInfo" centered="{{true}}" price="{{ item.price }}" desc="{{ item.desc }}" thumb="{{ item.thumb }}" thumb-mode="scaleToFill">
+          <view slot="title">
+            {{ item.title }}
+            <view class="title">
+              <van-icon name="clock-o" /> {{ tools.formatTime(item.updatetime) }}</view>
+          </view>
+          <view class="location" slot="num">
+            <view>
+              <van-icon name="location-o" /> {{ item.address }}</view>
+          </view>
+        </van-card>
+        <view slot="right">删除</view>
+      </van-swipe-cell>
+    </view>
+  </block>
+  <block wx:else>
+    <text class="tips">暂无数据</text>
+  </block>
+</view>

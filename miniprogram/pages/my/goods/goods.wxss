@@ -1,0 +1,29 @@
+.location {
+  float: right;
+}
+
+.goodscard {
+  background-color: #fff !important;
+}
+
+.van-swipe-cell__left, .van-swipe-cell__right {
+  display: inline-block;
+  width: 65px;
+  height: 104px;
+  font-size: 15px;
+  line-height: 104px;
+  color: #fff;
+  text-align: center;
+  background-color: #f44;
+}
+
+.title {
+  float: right;
+}
+
+.tips {
+  margin-top: 20px;
+  display: block;
+  text-align: center;
+  color: #646566;
+}

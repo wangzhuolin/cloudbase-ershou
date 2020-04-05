@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "van-row": "@vant/weapp/row",
+    "van-col": "@vant/weapp/col",
+    "van-image": "@vant/weapp/image",
+    "van-panel": "@vant/weapp/panel",
+    "van-goods-action": "@vant/weapp/goods-action",
+    "van-goods-action-icon": "@vant/weapp/goods-action-icon",
+    "van-goods-action-button": "@vant/weapp/goods-action-button"
+  },
+  "navigationBarTitleText": "商品详情"
+}

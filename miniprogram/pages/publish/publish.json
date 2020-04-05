@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-field": "@vant/weapp/field",
+    "van-uploader": "@vant/weapp/uploader",
+    "van-button": "@vant/weapp/button"
+  },
+  "navigationBarTitleText":"发布商品"
+}

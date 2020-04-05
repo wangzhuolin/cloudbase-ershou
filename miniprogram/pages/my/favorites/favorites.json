@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "van-card": "@vant/weapp/card",
+    "van-swipe-cell": "@vant/weapp/swipe-cell",
+    "van-icon": "@vant/weapp/icon"
+  },
+  "navigationBarTitleText": "我的收藏",
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 0
+}

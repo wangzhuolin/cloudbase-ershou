@@ -1,0 +1,49 @@
+<wxs src="../../utils/tools.wxs" module="tools" />
+<view class="container">
+  <view class="search">
+    <van-search value="" disabled bindtap="onFocus" shape="round" input-align="center" placeholder="请输入搜索关键词" />
+  </view>
+  <view class="page-body">
+    <swiper class="body-pic" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{background}}" wx:key="key">
+        <swiper-item>
+          <image src="{{item}}" style="height: 100%; width: 100%;" class="showbackground"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="grid">
+    <van-grid column-num="4" border="{{ false }}">
+      <van-grid-item use-slot wx:for="{{ grid }}" wx:key="key">
+        <navigator class="nav" url="{{item.url}}">
+          <image src="{{item.imgurl}}" />
+          <text>{{item.name}}</text>
+        </navigator>
+      </van-grid-item>
+    </van-grid>
+  </view>
+  <van-tabs bind:click="switchType" tab-active-class="tab-active" active="{{ active }}">
+    <view wx:for="{{ tab }}" wx:key="key">
+      <van-tab title="{{item.name}}">
+        <block wx:if="{{item.content.length != 0}}">
+          <view wx:for="{{item.content}}" wx:key="key" wx:for-item="list">
+            <van-card custom-class="goodscard" data-id="{{list._id}}" bindtap="goInfo" centered="{{true}}" price="{{list.price}}" desc="{{list.desc}}" thumb="{{list.thumb}}" thumb-mode="scaleToFill">
+              <view slot="title">
+                {{ list.title }}
+                <view class="title">
+                  <van-icon name="clock-o" /> {{ tools.formatTime(list.updatetime) }}</view>
+              </view>
+              <view class="location" slot="num">
+                <van-icon name="location-o" /> {{list.address}}
+              </view>
+            </van-card>
+          </view>
+        </block>
+        <block wx:else>
+          <text class="tips">暂无数据</text>
+        </block>
+      </van-tab>
+    </view>
+  </van-tabs>
+  <view class="zhanwei"></view>
+</view>

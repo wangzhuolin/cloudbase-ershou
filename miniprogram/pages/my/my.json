@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "van-row": "@vant/weapp/row",
+    "van-col": "@vant/weapp/col",
+    "van-image": "@vant/weapp/image",
+    "van-cell": "@vant/weapp/cell",
+    "van-cell-group": "@vant/weapp/cell-group"
+  },
+  "navigationBarTitleText": "我的"
+}

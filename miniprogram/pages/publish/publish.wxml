@@ -1,0 +1,24 @@
+<view class="container">
+  <form bindsubmit="formSubmit">
+    <van-cell-group>
+      <van-field name="title" center required clearable label="标题" value="" placeholder="起个亮眼的标题吧" confirm-type="next" />
+      <van-field name="category" value="{{array[category]}}" required readonly center label="分类"  placeholder="请选择分类" border="{{ false }}" use-button-slot>
+        <picker slot="button" bindchange="bindPickerChange" value="{{category}}" range="{{array}}">
+        <van-button size="small" type="primary" >点我选择分类</van-button>
+        </picker>
+      </van-field>
+      <van-field name="price" right-icon="gold-coin-o" type="digit" center required label="二手价" value="" placeholder="开个价" confirm-type="next" />
+      <van-field name="location" value="{{location.address}}" required readonly center label="地址" placeholder="请点击按钮选择地址" border="{{ false }}" use-button-slot>
+        <van-button slot="button" size="small" type="primary" bindtap="chooseLocation">点我获取地址</van-button>
+      </van-field>
+      <van-field name="tel" center required clearable type="number" label="联系方式" value="" placeholder="来留个联系方式" confirm-type="next" />
+      <van-field name="desc" required clearable input-class="des_input" value="" type="textarea" placeholder="详细介绍一下" autosize />
+    </van-cell-group>
+    <view class="imglist">
+      <view class="tips">最多可上传6张图片</view>
+      <van-uploader file-list="{{ fileList }}" accept="image" max-count="6" bind:after-read="uploadToCloud" bind:delete="deleteToCloud" bind:click-preview="previewImg" preview-full-image="{{false}}" multiple="{{true}}" />
+    </view>
+    <button class="btn_submit" type="primary" formType="submit">发布</button>
+  </form>
+  <view class="zhanwei"></view>
+</view>

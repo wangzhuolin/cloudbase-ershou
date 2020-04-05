@@ -1,0 +1,18 @@
+.location {
+  float: right;
+}
+
+.title {
+  float: right;
+}
+
+.goodscard {
+  background-color: #fff !important;
+}
+
+.tips{
+  margin-top: 20px;
+  display: block;
+  text-align: center;
+  color: #646566;
+}

@@ -1,0 +1,25 @@
+<view class="container">
+  <van-row custom-class="van_row">
+    <van-col offset="2" span="8">
+      <van-image round fit="cover" width="80" height="80" src="{{info.userinfo[0].avatarUrl}}" />
+    </van-col>
+    <van-col span="14">
+      <view class="username">{{info.userinfo[0].nickName}}
+        <image class="sex" wx:if="{{info.userinfo[0].gender !== 0}}" src="/images/icon/{{info.userinfo[0].gender === 1 ?'man':'women'}}.png"></image>
+      </view>
+      <view class="goodsinfo.address">地址：{{info.address}}</view>
+    </van-col>
+  </van-row>
+  <van-panel custom-class="goods_info" header-class="header_title" title="{{info.title}}" status="￥{{info.price}}">
+    <view class="des">{{info.desc}}</view>
+    <view wx:for="{{info.imglist}}" wx:key="key" class="imglist">
+      <image data-list="{{item}}" data-src="{{item}}" bindtap="imgYu" src="{{item}}" mode="widthFix"></image>
+    </view>
+  </van-panel>
+  <van-goods-action>
+    <van-goods-action-icon open-type="share" icon="fire-o" text="分享" />
+    <van-goods-action-icon color="#ff0000" icon="{{islike?'like':'like-o'}}" text="{{islike?'已收藏':'收藏'}}" bind:click="onClickCollect" />
+    <van-goods-action-button color="linear-gradient(to right, #4EEE94, #0CE819)" text="查看联系方式" bind:click="onClickButton" />
+  </van-goods-action>
+  <view class="zhanwei"></view>
+</view>

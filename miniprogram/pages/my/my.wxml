@@ -1,0 +1,19 @@
+<view class="container">
+  <van-row custom-class="van_row">
+    <van-col offset="2" span="8">
+      <button class="cleanBtn" open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="getUserInfomation">
+        <van-image round fit="cover" width="80" height="80" src="{{avatarUrl}}" />
+      </button>
+    </van-col>
+    <van-col span="14">
+      <view class="username">{{nickName}}
+        <image class="sex" wx:if="{{gender !== 0}}" src="/images/icon/{{gender === 1 ?'man':'women'}}.png"></image>
+      </view>
+      <view class="address">{{province}} {{city}}</view>
+    </van-col>
+  </van-row>
+  <van-cell-group>
+    <van-cell title="我发布的闲置" url="goods/goods"  is-link icon="balance-list-o" />
+    <van-cell title="我的收藏" url="favorites/favorites" is-link icon="like-o" />
+  </van-cell-group>
+</view>

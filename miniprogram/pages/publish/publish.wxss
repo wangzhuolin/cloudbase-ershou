@@ -1,0 +1,25 @@
+.des_input {
+  min-height: 100rpx !important;
+  font-size: 18px;
+}
+
+.imglist{
+  background-color: #fff;
+  padding: 16px 16px;
+  margin-bottom: 50rpx;
+}
+.tips {
+  margin-bottom: 50rpx;
+  color: rgba(69, 90, 100, 0.6);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.btn_submit{
+  margin: 20px;
+}
+
+.zhanwei{
+  height: 140rpx;
+}
