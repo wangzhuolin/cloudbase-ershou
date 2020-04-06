@@ -4,8 +4,8 @@ const app = getApp()
 Page({
   data: {
     background: [
-      'cloud://ershou.6572-ershou-1301498416/swiper/v2_q7xxzy.jpg',
-      'cloud://ershou.6572-ershou-1301498416/swiper/v2_q7xxx7.jpg'
+      'https://6572-ershou-1301498416.tcb.qcloud.la/swiper/v2_q7xxx7.jpg?sign=88c88fcc8e5536cfcc779be77ff4f632&t=1586139879',
+      'https://6572-ershou-1301498416.tcb.qcloud.la/swiper/v2_q7xxzy.jpg?sign=e4ae58b410be555a7ab5bd518d2d77ee&t=1586139909'
     ],
     tab: [{
       name: "最近发布",
