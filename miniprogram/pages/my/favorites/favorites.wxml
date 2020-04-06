@@ -3,7 +3,7 @@
   <block wx:if="{{goodslist.length != 0}}">
     <view class="goodslist" wx:for="{{goodslist}}" wx:key="key">
       <van-swipe-cell id="swipe-cell" right-width="{{ 65 }}" data-id="{{item._id}}" async-close bind:close="onClose">
-        <van-card custom-class="goodscard" data-id="{{item.goodsid}}" bindtap="goInfo" centered="{{true}}" price="{{ item.price }}" desc="{{ item.desc }}" thumb="{{ item.thumb }}" thumb-mode="scaleToFill">
+        <van-card custom-class="goodscard" data-id="{{item.goodsid}}" bindtap="goInfo" centered="{{true}}" price="{{ item.price }}" desc="{{ tools.sub(item.desc,0,30) }}" thumb="{{ item.thumb }}" thumb-mode="scaleToFill">
           <view slot="title">
             {{ item.title }}
             <view class="title">

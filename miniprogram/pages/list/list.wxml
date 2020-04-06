@@ -9,7 +9,7 @@
   </van-dropdown-menu>
   <block wx:if="{{goodslist.length != 0}}">
     <view class="goodslist" wx:for="{{goodslist}}" wx:key="key">
-      <van-card custom-class="goodscard" data-id="{{item._id}}" bindtap="goInfo" centered="{{true}}" price="{{ item.price }}" desc="{{ item.desc }}" thumb="{{ item.thumb }}" thumb-mode="scaleToFill">
+      <van-card custom-class="goodscard" data-id="{{item._id}}" bindtap="goInfo" centered="{{true}}" price="{{ item.price }}" desc="{{ tools.sub(item.desc,0,30) }}" thumb="{{ item.thumb }}" thumb-mode="scaleToFill">
         <view slot="title">
           {{ item.title }}
           <view class="title">

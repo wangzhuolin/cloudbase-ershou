@@ -27,7 +27,7 @@
       <van-tab title="{{item.name}}">
         <block wx:if="{{item.content.length != 0}}">
           <view wx:for="{{item.content}}" wx:key="key" wx:for-item="list">
-            <van-card custom-class="goodscard" data-id="{{list._id}}" bindtap="goInfo" centered="{{true}}" price="{{list.price}}" desc="{{list.desc}}" thumb="{{list.thumb}}" thumb-mode="scaleToFill">
+            <van-card custom-class="goodscard" data-id="{{list._id}}" bindtap="goInfo" centered="{{true}}" price="{{list.price}}" desc="{{tools.sub(list.desc,0,30)}}" thumb="{{list.thumb}}" thumb-mode="scaleToFill">
               <view slot="title">
                 {{ list.title }}
                 <view class="title">

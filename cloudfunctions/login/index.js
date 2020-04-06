@@ -5,7 +5,7 @@ const cloud = require('wx-server-sdk')
 
 // 初始化 cloud
 cloud.init({
-    env: 'ershou'
+  env: cloud.DYNAMIC_CURRENT_ENV
 })
 
 /**

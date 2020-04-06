@@ -43,4 +43,16 @@ function formatNumber(n) {
   return n[1] ? n : '0' + n   //第二位存在的时候，说明不用转化
 }
 
+//截取字符串
+var sub = function (val, start = 0, end = 17) {
+  if (val.length == 0 || val == undefined) {
+    return;
+  }
+  if (val.length > end) {
+    return val.substring(start, end) + "...";
+  } else {
+    return val;
+  }
+}
+module.exports.sub = sub;
 module.exports.formatTime = formatTime;
