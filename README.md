@@ -4,7 +4,7 @@
 
 ## 项目预览
 
-![小程序码](https://images.gitee.com/uploads/images/2020/0406/110006_6ac1a832_1939134.jpeg)
+![小程序码](https://images.gitee.com/uploads/images/2020/0407/215406_f5cda628_1939134.jpeg)
 
 ![项目截图](https://images.gitee.com/uploads/images/2020/0406/105808_4c8a323a_1939134.jpeg)
 
