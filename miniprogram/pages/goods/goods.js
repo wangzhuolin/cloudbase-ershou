@@ -11,9 +11,22 @@ Page({
   },
 
   onClickCollect: function() {
+    if (!app.globalData.openid) {
+      wx.showToast({
+        icon: 'none',
+        title: '请先登陆',
+        complete: res => {
+          setTimeout(function() {
+            wx.switchTab({
+              url: '/pages/my/my',
+            })
+          }, 2000);
+        }
+      })
+      return
+    }
     const db = wx.cloud.database()
     const _ = db.command
-    var content
     if (this.data.islike) {
       wx.showModal({
         title: '提示',

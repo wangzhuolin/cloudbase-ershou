@@ -42,6 +42,20 @@ Page({
 
   formSubmit: function(e) {
     console.log('form发生了submit事件，携带数据为：', e);
+    if (!app.globalData.openid) {
+      wx.showToast({
+        icon: 'none',
+        title: '请先登陆',
+        complete: res => {
+          setTimeout(function() {
+            wx.switchTab({
+              url: '/pages/my/my',
+            })
+          }, 2000);
+        }
+      })
+      return
+    }
     if (e.detail.value.category && e.detail.value.tel && e.detail.value.desc && e.detail.value.location && e.detail.value.price && e.detail.value.title) {
       if (this.data.fileList.length == 0) {
         wx.showToast({
