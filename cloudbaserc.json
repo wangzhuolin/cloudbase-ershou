@@ -92,7 +92,14 @@
                     "privateKey": "{{env.WX_CI_KEY}}",
                     "localPath": "./",
                     "ignores": ["node_modules/**/*"],
-                    "deployMode": "upload"
+                    "deployMode": "upload",
+                    "uploadOptions": {
+                        "version": "1.0.0",
+                        "desc": "二手交易平台 一键部署",
+                        "setting": {
+                            "es6": false
+                        }
+                    }
                 }
             }
         }
