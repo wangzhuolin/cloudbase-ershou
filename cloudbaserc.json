@@ -105,7 +105,7 @@
                         "version": "1.0.0",
                         "desc": "二手交易平台 一键部署",
                         "setting": {
-                            "es6": true
+                            "es6": false
                         }
                     }
                 }
