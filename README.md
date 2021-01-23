@@ -4,7 +4,7 @@
 
 ## 一键部署
 
-[![](https://main.qcloudimg.com/raw/67f5a389f1ac6f3b4d04c7256438e44f.svg)](https://console.cloud.tencent.com/tcb/env/index?action=CreateAndDeployCloudBaseProject&appUrl=https%3A%2F%2Fgitee.com%2Fwangzhuolin%2Ftcb-hackthon-ershou&appName=二手交易平台&branch=master)
+[![](https://main.qcloudimg.com/raw/67f5a389f1ac6f3b4d04c7256438e44f.svg)](https://console.cloud.tencent.com/tcb/env/index?action=CreateAndDeployCloudBaseProject&appUrl=https%3A%2F%2Fgitee.com%2Fwangzhuolin%2Ftcb-hackthon-ershou&branch=master)
 
 ## 项目预览
 
