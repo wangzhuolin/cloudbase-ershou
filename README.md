@@ -9,6 +9,10 @@
 ![项目截图](https://images.gitee.com/uploads/images/2020/0406/105808_4c8a323a_1939134.jpeg)
 
 
+## 一键部署
+
+[![](https://main.qcloudimg.com/raw/67f5a389f1ac6f3b4d04c7256438e44f.svg)](https://console.cloud.tencent.com/tcb/env/index?action=CreateAndDeployCloudBaseProject&appUrl=https%3A%2F%2Fgitee.com%2Fwangzhuolin%2Ftcb-hackthon-ershou.git&branch=master)
+
 ## 项目依赖
 - [小程序云开发](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html)
 - [vant-weapp](https://vant-contrib.gitee.io/vant-weapp)
