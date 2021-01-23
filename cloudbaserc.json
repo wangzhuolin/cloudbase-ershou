@@ -92,17 +92,7 @@
                     "privateKey": "{{env.WX_CI_KEY}}",
                     "localPath": "./",
                     "ignores": ["node_modules/**/*"],
-                    "deployMode": "preview",
-                    "previewOptions": {
-                        "desc": "一键预览",
-                        "setting": {
-                            "es6": false
-                        },
-                        "qrcodeOutputPath": "./qrcode.jpg",
-                        "pagePath": "pages/index/index",
-                        "searchQuery": "",
-                        "scene": 1011
-                    }
+                    "deployMode": "upload"
                 }
             }
         }
