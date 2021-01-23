@@ -1,120 +1,119 @@
 {
-	"miniprogramRoot": "miniprogram/",
-	"cloudfunctionRoot": "cloudfunctions/",
-	"setting": {
-		"urlCheck": false,
-		"es6": true,
-		"enhance": true,
-		"postcss": true,
-		"minified": true,
-		"newFeature": true,
-		"coverView": true,
-		"nodeModules": true,
-		"autoAudits": false,
-		"showShadowRootInWxmlPanel": true,
-		"scopeDataCheck": false,
-		"checkInvalidKey": true,
-		"checkSiteMap": true,
-		"uploadWithSourceMap": true,
-		"babelSetting": {
-			"ignore": [],
-			"disablePlugins": [],
-			"outputPath": ""
-		}
-	},
-	"appid": "wx058518913b9f3f3f",
-	"projectname": "%E6%A0%A1%E5%9B%AD%E4%BA%8C%E6%89%8B%E5%B0%8F%E7%A8%8B%E5%BA%8F",
-	"libVersion": "2.10.4",
-	"simulatorType": "wechat",
-	"simulatorPluginLibVersion": {},
-	"cloudfunctionTemplateRoot": "cloudfunctionTemplate",
-	"condition": {
-		"search": {
-			"current": -1,
-			"list": []
-		},
-		"conversation": {
-			"current": -1,
-			"list": []
-		},
-		"plugin": {
-			"current": -1,
-			"list": []
-		},
-		"game": {
-			"list": []
-		},
-		"gamePlugin": {
-			"current": -1,
-			"list": []
-		},
-		"miniprogram": {
-			"current": 0,
-			"list": [
-				{
-					"id": -1,
-					"name": "pages/search/search",
-					"pathName": "pages/search/search",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/list/list",
-					"pathName": "pages/list/list",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": 2,
-					"name": "pages/goods/goods",
-					"pathName": "pages/goods/goods",
-					"query": "id=42c9a7b15e88bf710049f3db5a76ff6c",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/publish/publish",
-					"pathName": "pages/publish/publish",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/my/my",
-					"pathName": "pages/my/my",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/my/goods/goods",
-					"pathName": "pages/my/goods/goods",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/my/favorites/favorites",
-					"pathName": "pages/my/favorites/favorites",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": 7,
-					"name": "pages/my/goods/edit/edit",
-					"pathName": "pages/my/goods/edit/edit",
-					"query": "id=79a2c43f5e87827f00483b584878f18f",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/my/about/about",
-					"pathName": "pages/my/about/about",
-					"query": "",
-					"scene": null
-				}
-			]
-		}
-	}
+    "miniprogramRoot": "miniprogram/",
+    "cloudfunctionRoot": "cloudfunctions/",
+    "setting": {
+        "urlCheck": true,
+        "es6": true,
+        "enhance": true,
+        "postcss": true,
+        "minified": true,
+        "newFeature": true,
+        "coverView": true,
+        "nodeModules": true,
+        "autoAudits": false,
+        "showShadowRootInWxmlPanel": true,
+        "scopeDataCheck": false,
+        "checkInvalidKey": true,
+        "checkSiteMap": true,
+        "uploadWithSourceMap": true,
+        "babelSetting": {
+            "ignore": [],
+            "disablePlugins": [],
+            "outputPath": ""
+        }
+    },
+    "appid": "",
+    "projectname": "%E6%A0%A1%E5%9B%AD%E4%BA%8C%E6%89%8B%E5%B0%8F%E7%A8%8B%E5%BA%8F",
+    "libVersion": "2.10.4",
+    "simulatorType": "wechat",
+    "simulatorPluginLibVersion": {},
+    "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
+    "condition": {
+        "search": {
+            "current": -1,
+            "list": []
+        },
+        "conversation": {
+            "current": -1,
+            "list": []
+        },
+        "plugin": {
+            "current": -1,
+            "list": []
+        },
+        "game": {
+            "list": []
+        },
+        "gamePlugin": {
+            "current": -1,
+            "list": []
+        },
+        "miniprogram": {
+            "current": 0,
+            "list": [{
+                    "id": -1,
+                    "name": "pages/search/search",
+                    "pathName": "pages/search/search",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "id": -1,
+                    "name": "pages/list/list",
+                    "pathName": "pages/list/list",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "id": 2,
+                    "name": "pages/goods/goods",
+                    "pathName": "pages/goods/goods",
+                    "query": "id=42c9a7b15e88bf710049f3db5a76ff6c",
+                    "scene": null
+                },
+                {
+                    "id": -1,
+                    "name": "pages/publish/publish",
+                    "pathName": "pages/publish/publish",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "id": -1,
+                    "name": "pages/my/my",
+                    "pathName": "pages/my/my",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "id": -1,
+                    "name": "pages/my/goods/goods",
+                    "pathName": "pages/my/goods/goods",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "id": -1,
+                    "name": "pages/my/favorites/favorites",
+                    "pathName": "pages/my/favorites/favorites",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "id": 7,
+                    "name": "pages/my/goods/edit/edit",
+                    "pathName": "pages/my/goods/edit/edit",
+                    "query": "id=79a2c43f5e87827f00483b584878f18f",
+                    "scene": null
+                },
+                {
+                    "id": -1,
+                    "name": "pages/my/about/about",
+                    "pathName": "pages/my/about/about",
+                    "query": "",
+                    "scene": null
+                }
+            ]
+        }
+    }
 }
