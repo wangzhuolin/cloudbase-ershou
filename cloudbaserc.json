@@ -9,7 +9,7 @@
             "preDeploy": {
                 "type": "execCommand",
                 "commands": [
-                    "sed -i 's/[envid]/{{env.ENV_ID}}/' ./miniprogram/app.js"
+                    "sed -i 's/云开发环境/{{env.ENV_ID}}/' ./miniprogram/app.js"
                 ]
             }
         },
