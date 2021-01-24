@@ -196,7 +196,7 @@ Page({
       });
       wx.cloud.uploadFile({
         cloudPath: `goods/${(new Date()).getTime() + Math.floor(9 * Math.random())}` + ".jpg", // 上传至云端的路径
-        filePath: item.path, // 小程序临时文件路径
+        filePath: item.url, // 小程序临时文件路径
         success: res => {
           // 返回文件 ID
           fileList.push({
